@@ -38,16 +38,16 @@ abstract class AbstractItemEvolution implements ItemEvolution {
     }
   }
 
+  final void qualityDropsToMinimum() {
+    item.quality = MIN_QUALITY;
+  }
+
   final void nextDay() {
     item.sellIn--;
   }
 
   final boolean isExpired() {
     return item.sellIn < 0;
-  }
-
-  final void qualityDropsToMinimum() {
-    item.quality = MIN_QUALITY;
   }
 
   final boolean sellInLessThan(int days) {
