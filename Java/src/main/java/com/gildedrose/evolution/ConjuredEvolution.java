@@ -2,7 +2,7 @@ package com.gildedrose.evolution;
 
 import com.gildedrose.Item;
 
-class ConjuredEvolution extends ItemEvolution {
+class ConjuredEvolution extends NormalItemEvolution {
 
   ConjuredEvolution(Item item) {
     super(item);

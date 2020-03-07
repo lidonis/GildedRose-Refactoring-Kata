@@ -24,7 +24,7 @@ public class ItemEvolutionChooser {
 
   public static ItemEvolution decide(TypedItem typedItem) {
     Function<Item, ItemEvolution> behaviour = associations
-        .getOrDefault(typedItem.getItemType(), ItemEvolution::new);
+        .getOrDefault(typedItem.getItemType(), NormalItemEvolution::new);
     return behaviour.apply(typedItem.getItem());
   }
 }

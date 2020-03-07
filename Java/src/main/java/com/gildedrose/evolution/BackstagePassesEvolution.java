@@ -2,7 +2,7 @@ package com.gildedrose.evolution;
 
 import com.gildedrose.Item;
 
-class BackstagePassesEvolution extends ItemEvolution {
+class BackstagePassesEvolution extends AbstractItemEvolution {
 
   BackstagePassesEvolution(Item item) {
     super(item);

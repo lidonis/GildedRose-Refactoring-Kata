@@ -2,15 +2,14 @@ package com.gildedrose.evolution;
 
 import com.gildedrose.Item;
 
-class LegendaryEvolution extends ItemEvolution {
+class LegendaryEvolution implements ItemEvolution {
 
-  LegendaryEvolution(Item item) {
-    super(item);
+  public LegendaryEvolution(Item item) {
+    // A legendary item never changes
   }
 
   @Override
   public void updateItem() {
     // A legendary item never changes
   }
-
 }

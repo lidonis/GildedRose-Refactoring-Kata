@@ -1,9 +1,9 @@
 package com.gildedrose;
 
-import com.gildedrose.evolution.ItemEvolution;
-import com.gildedrose.evolution.ItemEvolutionChooser;
 import com.gildedrose.classifier.ItemClassifier;
 import com.gildedrose.classifier.rulebased.RuleBasedItemClassifier;
+import com.gildedrose.evolution.ItemEvolution;
+import com.gildedrose.evolution.ItemEvolutionChooser;
 import java.util.Arrays;
 
 class GildedRose {
