@@ -46,8 +46,8 @@ abstract class AbstractItemEvolution implements ItemEvolution {
     return item.sellIn < 0;
   }
 
-  final void qualityDropsToZero() {
-    item.quality = 0;
+  final void qualityDropsToMinimum() {
+    item.quality = MIN_QUALITY;
   }
 
   final boolean sellInLessThan(int days) {

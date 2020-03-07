@@ -4,6 +4,9 @@ import com.gildedrose.Item;
 
 class BackstagePassesEvolution extends AbstractItemEvolution {
 
+  private static final int DAYS_TO_CLOSE_CONCERT = 10;
+  private static final int DAYS_TO_VERY_CLOSE_CONCERT = 5;
+
   BackstagePassesEvolution(Item item) {
     super(item);
   }
@@ -23,15 +26,15 @@ class BackstagePassesEvolution extends AbstractItemEvolution {
 
   @Override
   protected void updateIfExpired() {
-    qualityDropsToZero();
+    qualityDropsToMinimum();
   }
 
   private boolean isConcertClose() {
-    return sellInLessThan(10);
+    return sellInLessThan(DAYS_TO_CLOSE_CONCERT);
   }
 
   private boolean isConcertVeryClose() {
-    return sellInLessThan(5);
+    return sellInLessThan(DAYS_TO_VERY_CLOSE_CONCERT);
   }
 
 }
