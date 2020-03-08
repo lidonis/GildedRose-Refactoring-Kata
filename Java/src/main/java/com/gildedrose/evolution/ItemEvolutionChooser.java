@@ -13,7 +13,7 @@ public class ItemEvolutionChooser {
 
   static {
     associations = new EnumMap<>(ItemType.class);
-    associations.put(ItemType.LEGENDARY, LegendaryEvolution::new);
+    associations.put(ItemType.LEGENDARY, item -> new LegendaryEvolution());
     associations.put(ItemType.CHEESE, CheeseEvolution::new);
     associations.put(ItemType.BACKSTAGE_PASSES, BackstagePassesEvolution::new);
     associations.put(ItemType.CONJURED, ConjuredEvolution::new);
